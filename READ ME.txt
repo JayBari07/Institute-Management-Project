@@ -1,0 +1,40 @@
+Institute Management Project
+
+http://localhost/Institute Management Project/project.html
+
+1.Install XAMPP
+Download & install XAMPP for your OS (Windows / macOS / Linux) and open the XAMPP Control Panel.
+
+2.Start services
+In the control panel click Start for Apache (and MySQL if your app needs a database).
+
+3.Put your project in htdocs
+Copy your site folder to the XAMPP web root:
+
+Windows: C:\xampp\htdocs\yourproject
+
+macOS: /Applications/XAMPP/htdocs/yourproject
+
+Linux: /opt/lampp/htdocs/yourproject
+
+4.Open in browser
+Visit: http://localhost/yourproject/ (or http://127.0.0.1/yourproject/). If you changed Apache’s port to 8080, use http://localhost:8080/yourproject/.
+
+5.Database (optional)
+Open http://localhost/phpmyadmin, create a database, then update your app’s DB config. Default XAMPP MySQL user is root with an empty password.
+
+6.Common fixes
+
+Apache won’t start → port 80 conflict: stop the app using it (Skype/IIS) or change Apache’s port in httpd.conf.
+
+Check logs: xampp/apache/logs/error.log and xampp/mysql/data for errors.
+
+PHP errors → enable display_errors or check php_error_log.
+
+7.Node / other servers (if applicable)
+For Node apps you don’t need XAMPP — run node server.js and open http://localhost:PORT/ (replace PORT your app uses).
+
+8.Security reminder
+XAMPP is for development only — don’t expose it to the public internet without proper security.
+
+That’s it — drop your files into htdocs, start Apache (and MySQL), open http://localhost/Institute Management Project/project.html and you’re running locally
